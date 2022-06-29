@@ -1,0 +1,53 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(images/Xenia.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+#cactus {
+    width: 50px;
+    height: 50px;
+    background-image: url(images/Vova.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 100px;
+    left: 580px;
+    animation: cactusMov 3s infinite linear;
+}
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 1s linear;
+}
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 110px;
+    }
+    50% {
+        top: 80px;
+    }
+    70% {
+        top: 80px;
+    }
+    100% {
+        bottom: -150px;
+    }
+}
